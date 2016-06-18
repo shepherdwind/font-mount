@@ -1,0 +1,32 @@
+{
+  "name": "font-mount",
+  "version": "1.0.0",
+  "description": "font mout for linux system",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "cov": "nyc ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shepherdwind/fonts-mount.git"
+  },
+  "keywords": [
+    "fonts"
+  ],
+  "author": "eward.song@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shepherdwind/fonts-mount/issues"
+  },
+  "homepage": "https://github.com/shepherdwind/fonts-mount#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "debug": "^2.2.0",
+    "nyc": "^6.6.1",
+    "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  }
+}
