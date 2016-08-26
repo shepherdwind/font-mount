@@ -45,5 +45,10 @@ module.exports = function mount(fontConfig) {
   fs.copySync(fontConfig.fontSource, fullpath)
   debug('copy file end');
   // update fonts config
-  return child_process.execSync('which fc-cache && fc-cache -f -v');
+  child_process.exec('which fc-cache && fc-cache -f -v', function(err) {
+    if (err) {
+      return console.error(err)
+    }
+    console.log('mount success')
+  });
 };
